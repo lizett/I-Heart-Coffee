@@ -11,6 +11,9 @@
 		27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028E27A65F88002ECBFF /* ContentView.swift */; };
 		27AB029127A65F89002ECBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB029027A65F89002ECBFF /* Assets.xcassets */; };
 		27AB029427A65F89002ECBFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB029327A65F89002ECBFF /* Preview Assets.xcassets */; };
+		27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029A27A66053002ECBFF /* BrewMethods.swift */; };
+		27AB029D27A660E6002ECBFF /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029C27A660E6002ECBFF /* Water.swift */; };
+		27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029E27A6613A002ECBFF /* Sandbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		27AB028E27A65F88002ECBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27AB029027A65F89002ECBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27AB029327A65F89002ECBFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27AB029A27A66053002ECBFF /* BrewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethods.swift; sourceTree = "<group>"; };
+		27AB029C27A660E6002ECBFF /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		27AB029E27A6613A002ECBFF /* Sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */,
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
+				27AB029C27A660E6002ECBFF /* Water.swift */,
+				27AB029E27A6613A002ECBFF /* Sandbox.swift */,
+				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
 				27AB029027A65F89002ECBFF /* Assets.xcassets */,
 				27AB029227A65F89002ECBFF /* Preview Content */,
 			);
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */,
+				27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */,
+				27AB029D27A660E6002ECBFF /* Water.swift in Sources */,
 				27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */,
 				27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */,
 			);

@@ -9,9 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        NavigationView {
+            VStack {
+                Text("I ❤️ Coffee")
+                    .bold()
+                    .padding()
+                NavigationLink(destination: BrewMethods()) {
+                    Text("Continue as Guest")
+                }
+                Button(action: {
+                    // substituting action with "Clicked" for now
+                    print("Clicked")
+                }, label: {
+                    Text("Sign Up")
+                })
+            }
+            
+                
+//            Button(action: {
+//                // substituting action with "Clicked" for now
+//                print("Clicked")
+//            }, label: {
+//                Text("Sign In")
+//            })
+//            Button(action: {
+//                // substituting action with "Clicked" for now
+//                print("Clicked")
+//            }, label: {
+//                Text("Continue as Guest")
+//            })
+        }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
