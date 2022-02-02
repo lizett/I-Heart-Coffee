@@ -11,17 +11,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 Text("I ❤️ Coffee")
                     .bold()
                     .padding()
+                Spacer()
                 NavigationLink(destination: BrewMethods()) {
                     Text("Continue as Guest")
+                        .padding()
                 }
                 Button(action: {
                     // substituting action with "Clicked" for now
                     print("Clicked")
                 }, label: {
-                    Text("Sign Up")
+                    Text("Sign In/Sign Up")
                 })
             }
             
@@ -39,6 +42,7 @@ struct ContentView: View {
 //                Text("Continue as Guest")
 //            })
         }
+    
         }
 }
 

@@ -14,9 +14,16 @@
 		27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029A27A66053002ECBFF /* BrewMethods.swift */; };
 		27AB029D27A660E6002ECBFF /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029C27A660E6002ECBFF /* Water.swift */; };
 		27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB029E27A6613A002ECBFF /* Sandbox.swift */; };
+		27B3F1B827A744C100D9A96E /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3F1B727A744C100D9A96E /* Recipes.swift */; };
+		27CC5B3E27A73D9900A2F099 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC5B3D27A73D9900A2F099 /* TabBar.swift */; };
+		27CC5B4027A73FC200A2F099 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC5B3F27A73FC200A2F099 /* Favorites.swift */; };
+		27E43EE827AA4922001BDCEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */; };
+		27E43EEA27AB053E001BDCEA /* BrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E43EE927AB053E001BDCEA /* BrewModel.swift */; };
+		3B2D4263DAEC597999606BB1 /* Pods_I_heart_coffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-heart-coffee.release.xcconfig"; path = "Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee.release.xcconfig"; sourceTree = "<group>"; };
 		27AB028927A65F88002ECBFF /* I-heart-coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I-heart-coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_heart_coffeeApp.swift; sourceTree = "<group>"; };
 		27AB028E27A65F88002ECBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +32,13 @@
 		27AB029A27A66053002ECBFF /* BrewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethods.swift; sourceTree = "<group>"; };
 		27AB029C27A660E6002ECBFF /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		27AB029E27A6613A002ECBFF /* Sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = "<group>"; };
+		27B3F1B727A744C100D9A96E /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		27CC5B3D27A73D9900A2F099 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		27CC5B3F27A73FC200A2F099 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27E43EE927AB053E001BDCEA /* BrewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewModel.swift; sourceTree = "<group>"; };
+		A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_heart_coffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-heart-coffee.debug.xcconfig"; path = "Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2D4263DAEC597999606BB1 /* Pods_I_heart_coffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,8 @@
 			children = (
 				27AB028B27A65F88002ECBFF /* I-heart-coffee */,
 				27AB028A27A65F88002ECBFF /* Products */,
+				C322992D84FF43C9D603A399 /* Pods */,
+				AFEB9698A6A7297CA1A09BCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +74,16 @@
 		27AB028B27A65F88002ECBFF /* I-heart-coffee */ = {
 			isa = PBXGroup;
 			children = (
+				27B3F1B627A7448300D9A96E /* Models */,
 				27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */,
+				27CC5B3D27A73D9900A2F099 /* TabBar.swift */,
+				27CC5B3F27A73FC200A2F099 /* Favorites.swift */,
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
 				27AB029C27A660E6002ECBFF /* Water.swift */,
 				27AB029E27A6613A002ECBFF /* Sandbox.swift */,
-				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
+				27E43EE927AB053E001BDCEA /* BrewModel.swift */,
+				27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */,
+				27CC5B3C27A7137400A2F099 /* ViewModels */,
 				27AB029027A65F89002ECBFF /* Assets.xcassets */,
 				27AB029227A65F89002ECBFF /* Preview Content */,
 			);
@@ -76,6 +98,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		27B3F1B627A7448300D9A96E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27B3F1B727A744C100D9A96E /* Recipes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27CC5B3C27A7137400A2F099 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AFEB9698A6A7297CA1A09BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C322992D84FF43C9D603A399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */,
+				18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27AB029727A65F89002ECBFF /* Build configuration list for PBXNativeTarget "I-heart-coffee" */;
 			buildPhases = (
+				4C4456C34BDFC6E8F30DA615 /* [CP] Check Pods Manifest.lock */,
 				27AB028527A65F88002ECBFF /* Sources */,
 				27AB028627A65F88002ECBFF /* Frameworks */,
 				27AB028727A65F88002ECBFF /* Resources */,
+				7188E8CCAF70B21BBA257696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,10 +193,53 @@
 			files = (
 				27AB029427A65F89002ECBFF /* Preview Assets.xcassets in Resources */,
 				27AB029127A65F89002ECBFF /* Assets.xcassets in Resources */,
+				27E43EE827AA4922001BDCEA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C4456C34BDFC6E8F30DA615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I-heart-coffee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7188E8CCAF70B21BBA257696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27AB028527A65F88002ECBFF /* Sources */ = {
@@ -149,8 +249,12 @@
 				27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */,
 				27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */,
 				27AB029D27A660E6002ECBFF /* Water.swift in Sources */,
+				27B3F1B827A744C100D9A96E /* Recipes.swift in Sources */,
+				27CC5B3E27A73D9900A2F099 /* TabBar.swift in Sources */,
+				27CC5B4027A73FC200A2F099 /* Favorites.swift in Sources */,
 				27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */,
 				27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */,
+				27E43EEA27AB053E001BDCEA /* BrewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +379,7 @@
 		};
 		27AB029827A65F89002ECBFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +408,7 @@
 		};
 		27AB029927A65F89002ECBFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
