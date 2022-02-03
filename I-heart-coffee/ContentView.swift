@@ -20,30 +20,15 @@ struct ContentView: View {
                     Text("Continue as Guest")
                         .padding()
                 }
+                // substituting button and action with "Clicked" for now
                 Button(action: {
-                    // substituting action with "Clicked" for now
                     print("Clicked")
                 }, label: {
                     Text("Sign In/Sign Up")
                 })
             }
-            
-                
-//            Button(action: {
-//                // substituting action with "Clicked" for now
-//                print("Clicked")
-//            }, label: {
-//                Text("Sign In")
-//            })
-//            Button(action: {
-//                // substituting action with "Clicked" for now
-//                print("Clicked")
-//            }, label: {
-//                Text("Continue as Guest")
-//            })
         }
-    
-        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

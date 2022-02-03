@@ -7,16 +7,38 @@
 
 import SwiftUI
 
+class Calculator {
+    func frenchPressChemex () -> Int {
+        return 10
+//        gramsCoffee = waterAmount * 17
+//        tbpCoffee = gramsCoffee/15
+//
+//        return tbpCoffee
+    }
+    
+}
+
 struct Water: View {
+    @State var calculator = Calculator()
     @State var brewMethod: BrewModel
     @State var waterAmount: Int = 1
     var body: some View {
         VStack {
+            Picker(selection: $waterAmount, label: Text("How many cup(s)")) {
+                Text("1").tag(3)
+                Text("2").tag(2)
+                Text("3").tag(1)
+            }
             Button("Cups is \(waterAmount)") {
                 self.waterAmount += 1
+//            print("water value:\(self.$calculator.frenchPressChemex")
             }
             Text("Brew method is \(brewMethod.rawValue)")
-}}}
+        }
+        
+    }
+    
+}
 
 //    @State var value = ""
 //    var waterOptions = "How many cups"

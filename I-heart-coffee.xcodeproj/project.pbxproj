@@ -79,11 +79,11 @@
 				27CC5B3D27A73D9900A2F099 /* TabBar.swift */,
 				27CC5B3F27A73FC200A2F099 /* Favorites.swift */,
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
-				27AB029C27A660E6002ECBFF /* Water.swift */,
 				27AB029E27A6613A002ECBFF /* Sandbox.swift */,
 				27E43EE927AB053E001BDCEA /* BrewModel.swift */,
+				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
+				27AB029C27A660E6002ECBFF /* Water.swift */,
 				27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */,
-				27CC5B3C27A7137400A2F099 /* ViewModels */,
 				27AB029027A65F89002ECBFF /* Assets.xcassets */,
 				27AB029227A65F89002ECBFF /* Preview Content */,
 			);
@@ -104,14 +104,6 @@
 				27B3F1B727A744C100D9A96E /* Recipes.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		27CC5B3C27A7137400A2F099 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AFEB9698A6A7297CA1A09BCF /* Frameworks */ = {

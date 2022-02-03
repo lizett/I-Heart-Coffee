@@ -11,35 +11,33 @@ struct BrewMethods: View {
     @State var brewMethod: BrewModel?
     
     var body: some View {
-        NavigationView {
+        
             VStack {
                 Text("Choose Your Brew Method")
                     .bold()
                     .font(.largeTitle)
                     .padding()
                 Spacer()
+            // I can use BrewModel.frenchPress or just .frenchPress -> equals same result
                 NavigationLink(destination: Water(brewMethod: .frenchPress)) {
                     Text("French Press")
                 }
-//                I can use BrewModel.mokaPot or just .mokaPot -> same result
+                NavigationLink(destination: Water(brewMethod: .chemex)) {
+                    Text("Chemex")
+                }
+                NavigationLink(destination: Water(brewMethod: .drip)) {
+                    Text("Drip")
+                }
+
                 NavigationLink(destination: Water(brewMethod: .mokaPot)) {
                     Text("Moka Pot")
                 }
-//                Button(action: {
-//                    // substituting action with "Clicked" for now
-//                    (print("Clicked"))
-//                }, label: {
-//                    Text("French Press").bold()
-//                })
-//                Button(action: {
-//                    // substituting action with "Clicked" for now
-//                    print("Clicked")
-//                }, label: {
-//                    Text("Chemex").bold()
-//                })
-//
-
-        }
+                NavigationLink(destination: Water(brewMethod: .aeroPress)) {
+                    Text("Aero Press")
+                }
+                
+                Spacer()
+            
     }
 }
 }
