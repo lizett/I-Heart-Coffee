@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270EA3F827ACE12E0074FBA1 /* GrindsRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EA3F727ACE12E0074FBA1 /* GrindsRatio.swift */; };
+		270EA3FA27ACF9C90074FBA1 /* Sandbox2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270EA3F927ACF9C90074FBA1 /* Sandbox2.swift */; };
 		27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */; };
 		27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028E27A65F88002ECBFF /* ContentView.swift */; };
 		27AB029127A65F89002ECBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB029027A65F89002ECBFF /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-heart-coffee.release.xcconfig"; path = "Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee.release.xcconfig"; sourceTree = "<group>"; };
+		270EA3F727ACE12E0074FBA1 /* GrindsRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindsRatio.swift; sourceTree = "<group>"; };
+		270EA3F927ACF9C90074FBA1 /* Sandbox2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandbox2.swift; sourceTree = "<group>"; };
 		27AB028927A65F88002ECBFF /* I-heart-coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I-heart-coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_heart_coffeeApp.swift; sourceTree = "<group>"; };
 		27AB028E27A65F88002ECBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,9 +84,11 @@
 				27CC5B3F27A73FC200A2F099 /* Favorites.swift */,
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
 				27AB029E27A6613A002ECBFF /* Sandbox.swift */,
+				270EA3F927ACF9C90074FBA1 /* Sandbox2.swift */,
 				27E43EE927AB053E001BDCEA /* BrewModel.swift */,
 				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
 				27AB029C27A660E6002ECBFF /* Water.swift */,
+				270EA3F727ACE12E0074FBA1 /* GrindsRatio.swift */,
 				27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */,
 				27AB029027A65F89002ECBFF /* Assets.xcassets */,
 				27AB029227A65F89002ECBFF /* Preview Content */,
@@ -239,11 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */,
+				270EA3FA27ACF9C90074FBA1 /* Sandbox2.swift in Sources */,
 				27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */,
 				27AB029D27A660E6002ECBFF /* Water.swift in Sources */,
 				27B3F1B827A744C100D9A96E /* Recipes.swift in Sources */,
 				27CC5B3E27A73D9900A2F099 /* TabBar.swift in Sources */,
 				27CC5B4027A73FC200A2F099 /* Favorites.swift in Sources */,
+				270EA3F827ACE12E0074FBA1 /* GrindsRatio.swift in Sources */,
 				27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */,
 				27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */,
 				27E43EEA27AB053E001BDCEA /* BrewModel.swift in Sources */,

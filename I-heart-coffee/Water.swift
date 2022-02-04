@@ -7,69 +7,55 @@
 
 import SwiftUI
 
-class Calculator {
-    func frenchPressChemex () -> Int {
-        return 10
-//        gramsCoffee = waterAmount * 17
-//        tbpCoffee = gramsCoffee/15
-//
-//        return tbpCoffee
-    }
-    
-}
 
 struct Water: View {
-    @State var calculator = Calculator()
-    @State var brewMethod: BrewModel
+    
+    @State var brewModel: BrewModel
     @State var waterAmount: Int = 1
+
+    func computeGrinds () -> Double {
+        switch brewModel {
+        case .frenchPress:
+            return (Double((17 * waterAmount))/15.0)
+        case .drip:
+            return Double(((30 * waterAmount)/15))
+        case .chemex:
+            return Double(((17 * waterAmount)/15))
+        case .mokaPot:
+            return Double(((18 * waterAmount)/15))
+        case .aeroPress:
+            return Double(((15 * waterAmount)/15))
+        default:
+            return Double(((15 * waterAmount)/15))
+        }
+    }
     var body: some View {
         VStack {
             Picker(selection: $waterAmount, label: Text("How many cup(s)")) {
-                Text("1").tag(3)
+                Text("1").tag(1)
                 Text("2").tag(2)
-                Text("3").tag(1)
+                Text("3").tag(3)
             }
             Button("Cups is \(waterAmount)") {
                 self.waterAmount += 1
-//            print("water value:\(self.$calculator.frenchPressChemex")
             }
-            Text("Brew method is \(brewMethod.rawValue)")
+            Text("Brew method is \(brewModel.rawValue)")
+            Text("Grinds is \(computeGrinds())")
         }
-        
     }
-    
 }
+// in VStack or above HStack:
+//      Text("For brew method \(brewMethod.rawValue) you will need")
+// HStack {
+//      Text("How many cup(s) \(waterDropdown)"?)
 
-//    @State var value = ""
-//    var waterOptions = "How many cups"
-//    var dropDownList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-//    var body: some View {
-//        Menu {
-//            ForEach(dropDownList, id: \.self) { client in Button(client) {
-//                self.value = client
-//            }
-//            }
-//        } label: {
-//            VStack(spacing: 5){
-//                HStack{
-//                    Text(value.isEmpty ? waterOptions : value)
-//                        .foregroundColor(value.isEmpty ? .gray : .black)
-//                    Spacer()
-//                    Image(systemName: "chevron.down")
-//                        .foregroundColor(Color.orange)
-//                        .font(Font.system(size: 20, weight: .bold))
-//                }
-//                .padding(.horizontal)
-//                Rectangle()
-//                    .fill(Color.orange)
-//                    .frame(height: 2)
-//            }
-//        }
-//    }
+//      Text("\(calculator) ")
 //}
+
+
 
 struct Water_Previews: PreviewProvider {
     static var previews: some View {
-        Water(brewMethod: .drip)
+        Water(brewModel: .drip)
     }
 }

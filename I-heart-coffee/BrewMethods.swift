@@ -19,20 +19,20 @@ struct BrewMethods: View {
                     .padding()
                 Spacer()
             // I can use BrewModel.frenchPress or just .frenchPress -> equals same result
-                NavigationLink(destination: Water(brewMethod: .frenchPress)) {
+                NavigationLink(destination: Water(brewModel: .frenchPress)) {
                     Text("French Press")
                 }
-                NavigationLink(destination: Water(brewMethod: .chemex)) {
+                NavigationLink(destination: Water(brewModel: .chemex)) {
                     Text("Chemex")
                 }
-                NavigationLink(destination: Water(brewMethod: .drip)) {
+                NavigationLink(destination: Water(brewModel: .drip)) {
                     Text("Drip")
                 }
 
-                NavigationLink(destination: Water(brewMethod: .mokaPot)) {
+                NavigationLink(destination: Water(brewModel: .mokaPot)) {
                     Text("Moka Pot")
                 }
-                NavigationLink(destination: Water(brewMethod: .aeroPress)) {
+                NavigationLink(destination: Water(brewModel: .aeroPress)) {
                     Text("Aero Press")
                 }
                 
