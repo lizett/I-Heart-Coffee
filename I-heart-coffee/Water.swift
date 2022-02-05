@@ -12,47 +12,47 @@ struct Water: View {
     
     @State var brewModel: BrewModel
     @State var waterAmount: Int = 1
-
+    
     func computeGrinds () -> Double {
         switch brewModel {
-        case .frenchPress:
+        case .frenchPress, .chemex:
             return (Double((17 * waterAmount))/15.0)
         case .drip:
             return Double(((30 * waterAmount)/15))
-        case .chemex:
-            return Double(((17 * waterAmount)/15))
         case .mokaPot:
             return Double(((18 * waterAmount)/15))
         case .aeroPress:
             return Double(((15 * waterAmount)/15))
-        default:
-            return Double(((15 * waterAmount)/15))
+            //        default:
+            //            return Double(((15 * waterAmount)/15))
         }
     }
     var body: some View {
-        VStack {
-            Picker(selection: $waterAmount, label: Text("How many cup(s)")) {
-                Text("1").tag(1)
-                Text("2").tag(2)
-                Text("3").tag(3)
+        
+        VStack (spacing: 5) {
+            Spacer()
+            HStack {
+                Text("").padding(20)
+                Text("How many cups do you want to brew?")
+                Picker("", selection: $waterAmount) {
+                    ForEach(1...15, id: \.self){
+                        Text("\($0)")
+                    }
+                }
+                Spacer()
             }
-            Button("Cups is \(waterAmount)") {
-                self.waterAmount += 1
-            }
-            Text("Brew method is \(brewModel.rawValue)")
-            Text("Grinds is \(computeGrinds())")
+            Image("FrenchPress")
+                .resizable()
+                .scaledToFit()
+                .padding(30)
+            
+            
+            Text("\(brewModel.rawValue) coffee needs")
+            Text("\(computeGrinds().formatted()) tablespoons of coffee grinds for \(waterAmount) cup(s) of coffee")
+            Spacer()
         }
     }
 }
-// in VStack or above HStack:
-//      Text("For brew method \(brewMethod.rawValue) you will need")
-// HStack {
-//      Text("How many cup(s) \(waterDropdown)"?)
-
-//      Text("\(calculator) ")
-//}
-
-
 
 struct Water_Previews: PreviewProvider {
     static var previews: some View {

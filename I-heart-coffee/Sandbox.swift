@@ -19,10 +19,18 @@ import SwiftUI
 //        }
 //    }
 //}
+
+// in VStack or above HStack:
+//      Text("For brew method \(brewMethod.rawValue) you will need")
+// HStack {
+//      Text("How many cup(s) \(waterDropdown)"?)
+
+//      Text("\(calculator) ")
+//}
 struct Sandbox: View {
     @State var value = ""
-    var waterOptions = "How many cups"
-    var dropDownList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    var waterOptions = "How many cups do you want to brew? "
+    var dropDownList = ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"]
     
     var body: some View {
         Menu {
@@ -37,15 +45,16 @@ struct Sandbox: View {
                         .foregroundColor(value.isEmpty ? .gray : .black)
                     Spacer()
                     Image(systemName: "chevron.down")
-                        .foregroundColor(Color.orange)
+                        .foregroundColor(Color.pink)
                         .font(Font.system(size: 20, weight: .bold))
                 }
                 .padding(.horizontal)
                 Rectangle()
-                    .fill(Color.orange)
+                    .fill(Color.pink)
                     .frame(height: 2)
             }
         }
+        
     }
 }
 struct Sandbox_Previews: PreviewProvider {
