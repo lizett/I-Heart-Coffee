@@ -27,6 +27,7 @@ struct BrewMethods: View {
                 }
                 NavigationLink(destination: Water(brewModel: .drip)) {
                     Text("Drip")
+                    
                 }
 
                 NavigationLink(destination: Water(brewModel: .mokaPot)) {
