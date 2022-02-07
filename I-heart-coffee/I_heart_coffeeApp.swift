@@ -8,16 +8,25 @@
 import SwiftUI
 import Firebase
 
+
 @main
 struct I_heart_coffeeApp: App {
+    @StateObject var viewModel = AuthenticationViewModel()
     
     init() {
-        FirebaseApp.configure()
+        setupAuthentication()
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
+}
+
+extension I_heart_coffeeApp {
+  private func setupAuthentication() {
+    FirebaseApp.configure()
+  }
 }
