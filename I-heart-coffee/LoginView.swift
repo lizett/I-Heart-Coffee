@@ -17,7 +17,7 @@ struct LoginView: View {
       Spacer()
 
       // 2
-      Image("header_image")
+      Image("sun")
         .resizable()
         .aspectRatio(contentMode: .fit)
 

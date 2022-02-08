@@ -44,7 +44,7 @@ struct HomeView: View {
         Spacer()
         
         // 4
-        Button(action: viewModel.signOut) {
+          Button(action: viewModel.signOut) {
           Text("Sign out")
             .foregroundColor(.white)
             .padding()
@@ -54,13 +54,13 @@ struct HomeView: View {
             .padding()
         }
       }
-      .navigationTitle("Ellifit")
+      .navigationTitle("I heart")
     }
     .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 
-/// A generic view that shows images from the network.
+// A generic view that shows images from the network.
 struct NetworkImage: View {
   let url: URL?
 
