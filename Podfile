@@ -8,6 +8,6 @@ target 'I-heart-coffee' do
   # Pods for I-heart-coffee
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'GoogleSignIn'
+#  pod 'GoogleSignIn'
 
 end

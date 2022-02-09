@@ -21,13 +21,13 @@ struct LoginView: View {
         .resizable()
         .aspectRatio(contentMode: .fit)
 
-      Text("Welcome to Ellifit!")
+      Text("Welcome to I ❤️ Coffee!")
         .fontWeight(.black)
         .foregroundColor(Color(.systemIndigo))
         .font(.largeTitle)
         .multilineTextAlignment(.center)
 
-      Text("Empower your elliptical workouts by tracking every move.")
+      Text("Brew the perfect cup of coffee.")
         .fontWeight(.light)
         .multilineTextAlignment(.center)
         .padding()

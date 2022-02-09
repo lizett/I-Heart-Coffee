@@ -54,7 +54,7 @@ struct HomeView: View {
             .padding()
         }
       }
-      .navigationTitle("I heart")
+      .navigationTitle("I ❤️ Coffee")
     }
     .navigationViewStyle(StackNavigationViewStyle())
   }

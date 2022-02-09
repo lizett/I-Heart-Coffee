@@ -62,6 +62,7 @@ class AuthenticationViewModel: ObservableObject {
     }
     
     func signOut() {
+        //        print("Testing")
         // 1
         GIDSignIn.sharedInstance.signOut()
         

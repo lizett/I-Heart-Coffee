@@ -25,11 +25,9 @@
 		27CC5B4027A73FC200A2F099 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC5B3F27A73FC200A2F099 /* Favorites.swift */; };
 		27E43EE827AA4922001BDCEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */; };
 		27E43EEA27AB053E001BDCEA /* BrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E43EE927AB053E001BDCEA /* BrewModel.swift */; };
-		3B2D4263DAEC597999606BB1 /* Pods_I_heart_coffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-heart-coffee.release.xcconfig"; path = "Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee.release.xcconfig"; sourceTree = "<group>"; };
 		27631F7227AF881F006BFD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		27631F7327AF88A7006BFD88 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		27631F7527AF8C73006BFD88 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -48,8 +46,6 @@
 		27CC5B3F27A73FC200A2F099 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27E43EE927AB053E001BDCEA /* BrewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewModel.swift; sourceTree = "<group>"; };
-		A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_heart_coffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-heart-coffee.debug.xcconfig"; path = "Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2D4263DAEC597999606BB1 /* Pods_I_heart_coffee.framework in Frameworks */,
 				27B04EA127AF7F4100CAF335 /* FirebaseAuth in Frameworks */,
 				27B04EA427AF80BD00CAF335 /* GoogleSignIn in Frameworks */,
 			);
@@ -73,7 +68,6 @@
 				27AB028B27A65F88002ECBFF /* I-heart-coffee */,
 				27AB028A27A65F88002ECBFF /* Products */,
 				C322992D84FF43C9D603A399 /* Pods */,
-				AFEB9698A6A7297CA1A09BCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,19 +118,9 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		AFEB9698A6A7297CA1A09BCF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A165E56A7ADDABA75B99A4CB /* Pods_I_heart_coffee.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C322992D84FF43C9D603A399 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */,
-				18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,11 +132,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27AB029727A65F89002ECBFF /* Build configuration list for PBXNativeTarget "I-heart-coffee" */;
 			buildPhases = (
-				4C4456C34BDFC6E8F30DA615 /* [CP] Check Pods Manifest.lock */,
 				27AB028527A65F88002ECBFF /* Sources */,
 				27AB028627A65F88002ECBFF /* Frameworks */,
 				27AB028727A65F88002ECBFF /* Resources */,
-				7188E8CCAF70B21BBA257696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,48 +198,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4C4456C34BDFC6E8F30DA615 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-I-heart-coffee-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7188E8CCAF70B21BBA257696 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I-heart-coffee/Pods-I-heart-coffee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27AB028527A65F88002ECBFF /* Sources */ = {
@@ -401,7 +341,6 @@
 		};
 		27AB029827A65F89002ECBFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5DE01A5EE5B2A6B113C3430 /* Pods-I-heart-coffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,7 +370,6 @@
 		};
 		27AB029927A65F89002ECBFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18931D91C0A69C9518A43A45 /* Pods-I-heart-coffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
