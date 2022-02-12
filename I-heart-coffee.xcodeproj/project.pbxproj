@@ -11,6 +11,7 @@
 		27631F7627AF8C73006BFD88 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27631F7527AF8C73006BFD88 /* GoogleSignInButton.swift */; };
 		27631F7827AF8CB2006BFD88 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27631F7727AF8CB2006BFD88 /* LoginView.swift */; };
 		27631F7A27AF8D23006BFD88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27631F7927AF8D23006BFD88 /* HomeView.swift */; };
+		279E093F27B5BEFA00424F2F /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E093E27B5BEFA00424F2F /* CustomButtons.swift */; };
 		27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */; };
 		27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028E27A65F88002ECBFF /* ContentView.swift */; };
 		27AB029127A65F89002ECBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB029027A65F89002ECBFF /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		27631F7527AF8C73006BFD88 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		27631F7727AF8CB2006BFD88 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		27631F7927AF8D23006BFD88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		279E093E27B5BEFA00424F2F /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		27AB028927A65F88002ECBFF /* I-heart-coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I-heart-coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_heart_coffeeApp.swift; sourceTree = "<group>"; };
 		27AB028E27A65F88002ECBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				27631F7527AF8C73006BFD88 /* GoogleSignInButton.swift */,
 				27631F7727AF8CB2006BFD88 /* LoginView.swift */,
 				27631F7927AF8D23006BFD88 /* HomeView.swift */,
+				279E093E27B5BEFA00424F2F /* CustomButtons.swift */,
 				27CC5B3D27A73D9900A2F099 /* TabBar.swift */,
 				27CC5B3F27A73FC200A2F099 /* Favorites.swift */,
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
@@ -206,6 +209,7 @@
 			files = (
 				27631F7627AF8C73006BFD88 /* GoogleSignInButton.swift in Sources */,
 				27AB029B27A66053002ECBFF /* BrewMethods.swift in Sources */,
+				279E093F27B5BEFA00424F2F /* CustomButtons.swift in Sources */,
 				27631F7A27AF8D23006BFD88 /* HomeView.swift in Sources */,
 				27AB029F27A6613A002ECBFF /* Sandbox.swift in Sources */,
 				27AB029D27A660E6002ECBFF /* Water.swift in Sources */,
@@ -347,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"I-heart-coffee/Preview Content\"";
+				DEVELOPMENT_TEAM = 77W7TUCDHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "I-heart-coffee/Info.plist";
@@ -376,6 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"I-heart-coffee/Preview Content\"";
+				DEVELOPMENT_TEAM = 77W7TUCDHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "I-heart-coffee/Info.plist";

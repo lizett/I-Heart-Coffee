@@ -9,31 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
-    
+    //
+//    var body: some View {
+//        switch viewModel.state {
+//          case .signedIn: HomeView()
+//          case .signedOut: LoginView()
+//        }
+//      }
+    //
     var body: some View {
-        switch viewModel.state {
-              case .signedIn: HomeView()
-              case .signedOut: LoginView()
-            }
-        
-        NavigationView {
+//        if !$viewModel.signedIn {
+//            return AnyView(LoginView())
+//        } else {
+//            return AnyView(BrewMethods())
+//        }
+        NavigationView() {
             VStack {
                 Spacer()
-                Text("I ❤️ Coffee")
-                    .bold()
-                    .padding()
-                Spacer()
+                Image("sun")
+                    .resizable()
+                    .scaledToFit()
+                //                Spacer()
+                
                 NavigationLink(destination: BrewMethods()) {
-                    Text("Continue as Guest")
+                    Text("Brew the perfect cup of coffee!")
                         .padding()
                 }
-                // substituting button and action with "Clicked" for now
-                Button(action: {
-                    print("Clicked")
-                }, label: {
-                    Text("Sign In/Sign Up")
-                })
+            
+                GoogleSignInButton()
+                    .onTapGesture {
+                        viewModel.signIn()
+                    }
+                
+                //                    Spacer()
+                
+                
+                
             }
+            .background(Color("Custom Color"))
         }
     }
 }

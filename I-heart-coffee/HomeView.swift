@@ -11,10 +11,10 @@ import GoogleSignIn
 struct HomeView: View {
   // 1
   @EnvironmentObject var viewModel: AuthenticationViewModel
-  
+
   // 2
   private let user = GIDSignIn.sharedInstance.currentUser
-  
+
   var body: some View {
     NavigationView {
       VStack {
@@ -24,15 +24,15 @@ struct HomeView: View {
             .aspectRatio(contentMode: .fit)
             .frame(width: 100, height: 100, alignment: .center)
             .cornerRadius(8)
-          
+
           VStack(alignment: .leading) {
             Text(user?.profile?.name ?? "")
               .font(.headline)
-            
+
             Text(user?.profile?.email ?? "")
               .font(.subheadline)
           }
-          
+
           Spacer()
         }
         .padding()
@@ -40,9 +40,9 @@ struct HomeView: View {
         .background(Color(.secondarySystemBackground))
         .cornerRadius(12)
         .padding()
-        
+
         Spacer()
-        
+
         // 4
           Button(action: viewModel.signOut) {
           Text("Sign out")
@@ -54,9 +54,9 @@ struct HomeView: View {
             .padding()
         }
       }
-      .navigationTitle("I ❤️ Coffee")
+//      .navigationTitle("I ❤️ Coffee")
     }
-    .navigationViewStyle(StackNavigationViewStyle())
+//    .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 

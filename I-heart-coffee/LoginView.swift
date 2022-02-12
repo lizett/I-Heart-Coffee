@@ -21,25 +21,26 @@ struct LoginView: View {
         .resizable()
         .aspectRatio(contentMode: .fit)
 
-      Text("Welcome to I ❤️ Coffee!")
-        .fontWeight(.black)
-        .foregroundColor(Color(.systemIndigo))
-        .font(.largeTitle)
-        .multilineTextAlignment(.center)
+//      Text("Welcome to I ❤️ Coffee!")
+//        .fontWeight(.black)
+//        .foregroundColor(Color(.systemIndigo))
+//        .font(.largeTitle)
+//        .multilineTextAlignment(.center)
 
-      Text("Brew the perfect cup of coffee.")
+      Text("Brew the perfect cup of coffee!")
         .fontWeight(.light)
         .multilineTextAlignment(.center)
         .padding()
 
-      Spacer()
+//      Spacer()
 
       // 3
+
       GoogleSignInButton()
-        .padding()
-        .onTapGesture {
+            .onTapGesture {
           viewModel.signIn()
         }
+    
     }
   }
 }
