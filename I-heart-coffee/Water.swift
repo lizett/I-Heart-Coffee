@@ -9,10 +9,10 @@ import SwiftUI
 
 
 struct Water: View {
-    
+    @State var animationInProgress = true
     @State var brewModel: BrewModel
     @State var waterAmount: Int = 1
-
+    
     func computeGrinds () -> Double {
         switch brewModel {
         case .frenchPress, .chemex:
@@ -31,50 +31,66 @@ struct Water: View {
         VStack (spacing: 5) {
             Spacer()
             HStack {
-                Text("").padding(20)
+//                Text("").padding(20)
                 Text("How many cups do you want to brew?")
+                
                 Picker("", selection: $waterAmount) {
                     ForEach(1...15, id: \.self){
                         Text("\($0)")
+                        
                     }
                 }
-                Spacer()
-            }
+                
+//                Spacer()
+            }.padding()
+                .overlay (
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color("Custom Color"), lineWidth: 8)
+                )
             if (brewModel == .frenchPress) {
-              Image("FrenchPress")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(30)
+                LottieView(name: "frenchpress", loopMode: .loop)
+//                Image("FrenchPress")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .padding(30)
             } else if brewModel == .chemex {
-              Image("Chemex")
+                LottieView(name: "pourover", loopMode: .loop)
+                //              Image("Chemex")
+                //                    .resizable()
+                //                    .scaledToFit()
+                //                .padding(30)
+            } else if brewModel == .aeroPress {
+                LottieView(name: "aeropress", loopMode: .loop)
+//                Image("AeroPress")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .padding(30)
+            } else if brewModel == .mokaPot {
+                LottieView(name: "mokapot", loopMode: .loop)
+//                Image("MokaPot")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .padding(30)
+            } else if brewModel == .drip {
+                Image("Drip")
+                //                          .clipShape(RoundedRectangle(cornerRadius: 30))
                     .resizable()
                     .scaledToFit()
-                .padding(30)
-            } else if brewModel == .aeroPress {
-                Image("AeroPress")
-                      .resizable()
-                      .scaledToFit()
-                      .padding(30)
-              } else if brewModel == .mokaPot {
-                  Image("MokaPot")
-                        .resizable()
-                        .scaledToFit()
-                        .padding(30)
-                } else if brewModel == .drip {
-                    Image("Drip")
-//                          .clipShape(RoundedRectangle(cornerRadius: 30))
-                          .resizable()
-                          .scaledToFit()
-//                          .padding(30)
-//                          .cornerRadius(7) // Inner corner radius
-                              .padding(5) // Width of the border
-                              .background(Color.primary) // Color of the border
-                              .cornerRadius(10) // Outer corner radius
-                  }
-
+                //                          .padding(30)
+                //                          .cornerRadius(7) // Inner corner radius
+                    .padding(5) // Width of the border
+                    .background(Color.primary) // Color of the border
+                    .cornerRadius(10) // Outer corner radius
+            }
+            
             let formatted = String(format: "%.2f", computeGrinds())
-            Text("\(brewModel.rawValue) coffee needs")
-            Text("\(formatted) tbsp of coffee grinds for \(waterAmount) cup(s) of coffee")
+            
+            Text("**\(formatted)** tbsp of coffee grinds needed")
+                .padding()
+                .overlay (
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color("Custom Color"), lineWidth: 8)
+                )
             Spacer()
         }
     }
