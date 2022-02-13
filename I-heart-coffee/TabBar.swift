@@ -14,10 +14,10 @@ struct TabBar: View {
                 .tabItem{
                     Label("Home", systemImage: "house")
                 }
-            Favorites()
-                .tabItem{
-                    Label("Favorites", systemImage: "heart")
-                }
+//            Favorites()
+//                .tabItem{
+//                    Label("Favorites", systemImage: "heart")
+//                }
         }
     }
 }
