@@ -10,38 +10,34 @@ import SwiftUI
 
 struct Water: View {
     //    @EnvironmentObject var favorites: Favorites
-    @State var animationInProgress = true
+//    I don't think I need the below state for animation
+//    @State var animationInProgress = true
     @State var brewModel: BrewModel
     @State var waterAmount: Int = 1
-    
     @State var grindsSelection = "tbsp"
+    
     var grindOptions = ["tbsp", "grams"]
     
-    //    var resultGrindCalc: Double {
-    //
-    //        var value = Double(0)
-    //    }
-    //    switch grindsSelection {
-    //    case "tbsp" || brewModel.frenchPress:
-    //        value = Double(waterAmount) * 2.5
-    //
-    //    }
-    //
-    
-    func computeGrinds () -> Double {
+    var computeGrinds: Double {
+        
+        // transforms tbsp = 1 to grams (= 6.4 ?)
+        var unitValue: Double = 1.0
+        if grindsSelection == "grams" {
+            unitValue = 6.4
+        }
+        
         switch brewModel {
         case .frenchPress, .chemex:
-            return (2.5 * Double(waterAmount))
+            return (2.5 * unitValue * Double(waterAmount))
         case .drip :
-            return Double(2 * Double(waterAmount))
+            return Double(2 * unitValue * Double(waterAmount))
         case .mokaPot:
-            return Double(1 * Double(waterAmount))
+            return Double(1 * unitValue * Double(waterAmount))
         case .aeroPress:
-            return Double(1.6 * Double(waterAmount))
-            //        default:
-            //            return(1 * Double(waterAmount))
+            return Double(1.6 * unitValue * Double(waterAmount))
         }
     }
+    
     var body: some View {
         VStack (spacing: 5) {
             Spacer()
@@ -79,7 +75,7 @@ struct Water: View {
                     .cornerRadius(10) // Outer corner radius
             }
             
-            let formatted = String(format: "%.2f", computeGrinds())
+            let formatted = String(format: "%.2f", computeGrinds)
             
             HStack {
                 Text("**\(formatted)**")
@@ -87,7 +83,7 @@ struct Water: View {
                     ForEach(grindOptions, id: \.self) {
                         Text($0)
                     }
-                }).onChange(of: grindsSelection) { _ in    computeGrinds()  }
+                })
                 Text("of coffee grinds needed")
                 
             }
