@@ -18,6 +18,17 @@ struct CustomizedStyle: PrimitiveButtonStyle {
             .background(Color("Custom Color"))
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .foregroundColor(Color("Text Color"))
+//            .border(Color("Text Color"), width: 2)
+            .overlay (
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color("Text Color"), lineWidth: 3)
+            )
+           
+        
+            
+            
+        
+            
         
     }
 }

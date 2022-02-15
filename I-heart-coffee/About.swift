@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct About: View {
+    
     var body: some View {
         Text("Cuisinart Professional Burr Mill")
-        Text("OXO Brew Conical Burr Grinder")
+//        Text("OXO Brew Conical Burr Grinder")
+        
     }
 }
 
