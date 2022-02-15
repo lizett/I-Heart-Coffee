@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
 //    @StateObject var favorites = Favorites()
     @EnvironmentObject var viewModel: AuthenticationViewModel
-    //
+    
 //    var body: some View {
 //    switch viewModel.state {
 //    case .signedIn: HomeView()
 //    case .signedOut: LoginView()
 //    }
 //      }
-    //
+//
     var body: some View {
 //        if !$viewModel.signedIn {
 //            return AnyView(LoginView())

@@ -14,17 +14,7 @@ enum BrewModel: String {
     case drip = "Drip"
     case aeroPress = "Aero Press"
 
-//var image: Image {
-//    switch self {
-//    case .frenchPress:
-//        return Image(named: "FrenchPress")
-////    case .mokaPot:
-////        return Image(named: "MokaPot")
-//    default:
-//        return nil
-//    }
-//    }
-}
 
+}
 
 

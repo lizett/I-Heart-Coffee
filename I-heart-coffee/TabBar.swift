@@ -17,13 +17,14 @@ struct TabBar: View {
 //            Favorites()
 //                .tabItem{
 //                    Label("Favorites", systemImage: "heart")
-//                }
+                }
         }
     }
-}
+//}
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+//            .environmentObject(Favorites())
     }
 }

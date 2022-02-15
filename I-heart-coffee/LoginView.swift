@@ -14,12 +14,12 @@ struct LoginView: View {
 
   var body: some View {
     VStack {
-      Spacer()
+//      Spacer()
 
       // 2
-      Image("sun")
-        .resizable()
-        .aspectRatio(contentMode: .fit)
+//      Image("sun")
+//        .resizable()
+//        .aspectRatio(contentMode: .fit)
 
 //      Text("Welcome to I ❤️ Coffee!")
 //        .fontWeight(.black)
@@ -27,10 +27,10 @@ struct LoginView: View {
 //        .font(.largeTitle)
 //        .multilineTextAlignment(.center)
 
-      Text("Brew the perfect cup of coffee!")
-        .fontWeight(.light)
-        .multilineTextAlignment(.center)
-        .padding()
+//      Text("Brew the perfect cup of coffee!")
+//        .fontWeight(.light)
+//        .multilineTextAlignment(.center)
+//        .padding()
 
 //      Spacer()
 
