@@ -14,6 +14,7 @@
 		27631F7827AF8CB2006BFD88 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27631F7727AF8CB2006BFD88 /* LoginView.swift */; };
 		27631F7A27AF8D23006BFD88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27631F7927AF8D23006BFD88 /* HomeView.swift */; };
 		2790F7D827BB591B00BF676A /* GrinderOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790F7D727BB591B00BF676A /* GrinderOptions.swift */; };
+		2790F7DA27BC47C400BF676A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790F7D927BC47C400BF676A /* About.swift */; };
 		279E093F27B5BEFA00424F2F /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E093E27B5BEFA00424F2F /* CustomButtons.swift */; };
 		27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */; };
 		27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB028E27A65F88002ECBFF /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 		27631F7727AF8CB2006BFD88 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		27631F7927AF8D23006BFD88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2790F7D727BB591B00BF676A /* GrinderOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrinderOptions.swift; sourceTree = "<group>"; };
+		2790F7D927BC47C400BF676A /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		279E093E27B5BEFA00424F2F /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		27AB028927A65F88002ECBFF /* I-heart-coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I-heart-coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AB028C27A65F88002ECBFF /* I_heart_coffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_heart_coffeeApp.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				27AB028E27A65F88002ECBFF /* ContentView.swift */,
 				27AB029A27A66053002ECBFF /* BrewMethods.swift */,
 				27AB029C27A660E6002ECBFF /* Water.swift */,
+				2790F7D927BC47C400BF676A /* About.swift */,
 				27E43EE727AA4922001BDCEA /* GoogleService-Info.plist */,
 				27AB029027A65F89002ECBFF /* Assets.xcassets */,
 				27AB029227A65F89002ECBFF /* Preview Content */,
@@ -232,6 +235,7 @@
 				27631F7427AF88A7006BFD88 /* AuthenticationViewModel.swift in Sources */,
 				27AB028F27A65F88002ECBFF /* ContentView.swift in Sources */,
 				27AB028D27A65F88002ECBFF /* I_heart_coffeeApp.swift in Sources */,
+				2790F7DA27BC47C400BF676A /* About.swift in Sources */,
 				27E43EEA27AB053E001BDCEA /* BrewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

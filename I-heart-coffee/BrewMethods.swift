@@ -50,6 +50,12 @@ struct BrewMethods: View {
                     .padding()
                     .frame(width: 150.0, height: 50.0)
             }.buttonStyle(CustomizedStyle())
+            NavigationLink(destination: Water(brewModel: .coldBrew)) {
+                Text("Cold Brew")
+                    .bold()
+                    .padding()
+                    .frame(width: 150.0, height: 50.0)
+            }.buttonStyle(CustomizedStyle())
             Spacer()
             
         }

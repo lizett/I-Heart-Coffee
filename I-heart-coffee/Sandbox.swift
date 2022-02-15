@@ -7,26 +7,6 @@
 
 import SwiftUI
 
-//struct Sandbox: View {
-//    @State private var selection = 1
-//    var body: some View {
-//        HStack {
-//            Text ("How many cups ")
-//            Picker(selection: $selection, label: Text("Zeige Deteils")) {
-//                Text("Schmelzpunkt").tag(1)
-//                Text("Instrumentelle Analytik").tag(2)
-//            }
-//        }
-//    }
-//}
-
-// in VStack or above HStack:
-//      Text("For brew method \(brewMethod.rawValue) you will need")
-// HStack {
-//      Text("How many cup(s) \(waterDropdown)"?)
-
-//      Text("\(calculator) ")
-//}
 struct Sandbox: View {
     @State var value = ""
     var waterOptions = "How many cups do you want to brew? "
