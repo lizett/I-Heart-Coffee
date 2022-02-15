@@ -14,8 +14,6 @@ enum BrewModel: String {
     case drip = "Drip"
     case aeroPress = "Aero Press"
     case coldBrew = "Cold Brew"
-
-
 }
 
 

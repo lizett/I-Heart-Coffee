@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @StateObject var favorites = Favorites()
     @EnvironmentObject var viewModel: AuthenticationViewModel
     
 //    var body: some View {
@@ -30,7 +29,6 @@ struct ContentView: View {
                 Image("sun")
                     .resizable()
                     .scaledToFit()
-                //                Spacer()
                 NavigationLink(destination: BrewMethods()) {
                     Text("Brew the perfect cup of coffee!")
                         .padding()
@@ -40,15 +38,17 @@ struct ContentView: View {
                     .onTapGesture {
                         viewModel.signIn()
                 }
-                //                    Spacer()
+                Spacer()
+                NavigationLink(destination: About()) {
+                    Text("About the app!")
+                        .padding()
             }
-            .background(Color("Custom Color"))
-//            .environmentObject(favorites)
-        }
+            
+        }.background(Color("Custom Color"))
     }
         
 }
-
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

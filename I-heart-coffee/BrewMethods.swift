@@ -17,7 +17,6 @@ struct BrewMethods: View {
                 .bold()
                 .font(.largeTitle)
                 .padding()
-                
             
             Spacer()
             // I can use BrewModel.frenchPress or just .frenchPress -> equals same result
@@ -58,14 +57,9 @@ struct BrewMethods: View {
                     .frame(width: 150.0, height: 50.0)
             }.buttonStyle(CustomizedStyle())
             Spacer()
-                
-            
         }
         .background (
             Image("Splash")
-//                .edgesIgnoringSafeArea(.bottom)
-//                .edgesIgnoringSafeArea(.top)
-//                .ignoresSafeArea()
         )
     }
 }

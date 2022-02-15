@@ -9,18 +9,16 @@ import SwiftUI
 
 
 struct Water: View {
-    //    @EnvironmentObject var favorites: Favorites
-    //    I don't think I need the below state for animation
-    //    @State var animationInProgress = true
     @State var brewModel: BrewModel
     @State var waterAmount: Int = 1
     @State var grindsSelection = "tbsp"
-    @State var grinderSelection = ""
+    @State var grinderSelection = "Baratza"
     
     var grindOptions = ["tbsp", "grams"]
     var grinderOptions = ["Baratza","Cuisinart","OXO"]
     
-    func grinderOutput () -> String {
+    var grinderOutput: String {
+        
         if brewModel == .frenchPress && grinderSelection == "Baratza" {
             return baratza.frenchPress.rawValue
         } else if brewModel == .frenchPress && grinderSelection == "Cuisinart" {
@@ -114,7 +112,6 @@ struct Water: View {
         VStack {
             Spacer()
             HStack {
-                //                Text("").padding(20)
                 Text("How many cups do you want to brew?")
                 
                 Picker("", selection: $waterAmount) {
@@ -122,11 +119,10 @@ struct Water: View {
                         Text("\($0)")
                     }
                 }
-                //                Spacer()
             }.padding()
                 .overlay (
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color("Custom Color"), lineWidth: 8)
+                        .stroke(Color("Text Color"), lineWidth: 8)
                 )
             
             //            gif/image conditionals
@@ -162,7 +158,7 @@ struct Water: View {
             .padding()
             .overlay (
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color("Custom Color"), lineWidth: 8)
+                    .stroke(Color("Text Color"), lineWidth: 8)
             )
             .padding(6
             )
@@ -172,53 +168,30 @@ struct Water: View {
                 Picker("Select brand of grinder: ", selection: $grinderSelection, content: {
                     ForEach(grinderOptions, id: \.self) {
                         Text($0)
-                        
                     }
                 })
-                Text("grinder setting: **\(grinderOutput())**")
+                Text("grinder setting: **\(grinderOutput)**")
                 //                    .font(.system(size: 22))
                 
             }
             .padding()
             .overlay (
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color("Custom Color"), lineWidth: 8)
+                    .stroke(Color("Text Color"), lineWidth: 8)
             )
-            
-            
-            //            .padding()
-            //            .overlay (
-            //                RoundedRectangle(cornerRadius: 16)
-            //                    .stroke(Color("Custom Color"), lineWidth: 8)
-            //            )
-            
-            
             .padding(20)
-            
-            
-        }
-        
+        } .background(Color("Custom Color"))
+            .edgesIgnoringSafeArea(.bottom)
+        //            .ignoresSafeArea()
         Spacer()
-        //            Button(favorites.contains(brew) ? "Remove from Favorites" : "Add to Favorites") {
-        //                        if favorites.contains(brew) {
-        //                            favorites.remove(brew)
-        //                        } else {
-        //                            favorites.add(brew)
-        //                        }
-        //                    }
-        //                        .buttonStyle(.borderedProminent)
-        //                        .padding()
     }
 }
 
 
 struct Water_Previews: PreviewProvider {
     static var previews: some View {
-        //        if need to delete favorites, can delete this navigation view too if not using nav view in this water view
-        NavigationView {
-            Water(brewModel: .drip)
-            //                .environmentObject(Favorites())
-        }
+        Water(brewModel: .drip)
     }
 }
+
 
